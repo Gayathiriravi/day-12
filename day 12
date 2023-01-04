@@ -1,0 +1,10 @@
+arr=list(map(int,input().strip().split()))
+k=int(input())
+s1=[]
+c=len(arr)-(k-1)
+for i in range(0,c):
+    s=[]
+    for j in range(0,k):
+        s.append(arr[i+j])
+    s1.append(max(s))
+print(s1)
